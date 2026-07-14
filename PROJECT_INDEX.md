@@ -13,4 +13,6 @@
 - Intended remote: `https://github.com/hututuo/codex-long-task-continuity`
 - Visibility: public
 - Default branch: `main`
-- Initial publication status: pending remote creation and push
+- Initial publication status: published and remotely verified
+- Initial public commit: `af715638a627cb5ccd1b19ab78ce2fc75e299126`
+- Verified remote README blob: `3a823a4b63cc412893186c2a085a9dd074f99739`
