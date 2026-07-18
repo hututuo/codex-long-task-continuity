@@ -19,6 +19,8 @@
 - Remote: `https://github.com/hututuo/codex-long-task-continuity`
 - Visibility: public
 - Default branch: `main`
-- Current local work branch: `feature/hook-installer-v2`
+- Current local branch: `main`
 - V1 public baseline: `a0b97d46db55734c0a7476ac03d2b6a9af337efd`
-- V2 publication status: validated on the task branch; pending merge, push, and remote readback
+- V2 implementation commit: `2db5c60f312679a1ee83df537c3525a3b654af4a`
+- V2 publication status: published to public `main`; `git ls-remote` matched the implementation commit and the remote README matched the local file byte-for-byte
+- Published README SHA-256: `ae516411089871148570892ccef992861d7ff0bef4f8823522be00045299e021`

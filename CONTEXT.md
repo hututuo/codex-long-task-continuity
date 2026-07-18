@@ -16,7 +16,8 @@ Publish a self-contained Codex `SessionStart` Hook that an Agent can install saf
 - Model scope is exactly `gpt-5.6-sol` and `gpt-5.6-terra`; Luna, GPT-5.5, and other models receive no overlay.
 - The matcher is `startup|compact`. The README explicitly records that compact reinjection occurs after the current summary and cannot retroactively protect the first compaction of an old, uninjected session.
 - Legacy full-root and model-catalog overlays are detected but not automatically removed because those files may contain unrelated user routing.
-- The publication candidate passes 21 isolated tests, Python compilation, end-to-end install/idempotence/uninstall/restore exercise, and independent read-only QA with no remaining release blocker.
+- V2 is published on public `main` at implementation commit `2db5c60f312679a1ee83df537c3525a3b654af4a` after 21 isolated tests, Python compilation, end-to-end install/idempotence/uninstall/restore exercise, and independent read-only QA with no remaining release blocker.
+- GitHub remote readback matched the published commit, and the remote `README.md` matched the local file byte-for-byte with SHA-256 `ae516411089871148570892ccef992861d7ff0bef4f8823522be00045299e021`.
 - Personal paths, local hashes, backups, logs, and unrelated `system-tools` records remain excluded from the public repository.
 - Public repository: `https://github.com/hututuo/codex-long-task-continuity`.
 
