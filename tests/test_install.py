@@ -46,6 +46,7 @@ class RepositoryDocumentationTests(unittest.TestCase):
             "gpt-5.6-terra",
             "gpt-5.6-luna",
             "gpt-5.5",
+            "Delegation authorization",
             "Completion gate",
             "python3 install.py install",
             "/hooks",
@@ -53,6 +54,14 @@ class RepositoryDocumentationTests(unittest.TestCase):
             self.assertIn(marker, readme)
         self.assertNotIn('root_agent_usage_hint_text = """', readme)
         self.assertNotIn('model_catalog_json = "', readme)
+
+    def test_compaction_prompt_preserves_latest_delegation_authorization(self) -> None:
+        prompt = (install.PROJECT_ROOT / "prompts" / "compaction-continuity.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("- Delegation authorization:", prompt)
+        self.assertIn("the user's latest active instruction", prompt)
+        self.assertIn("later instructions supersede earlier ones", prompt)
 
 
 class InstallerTests(unittest.TestCase):

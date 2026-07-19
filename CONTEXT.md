@@ -4,11 +4,12 @@
 
 Publish a self-contained Codex `SessionStart` Hook that an Agent can install safely from the GitHub repository. The Hook adds two developer-context overlays only for GPT-5.6 Sol and Terra:
 
-1. Long-task compaction continuity with a Completion gate.
+1. Long-task compaction continuity with current delegation authorization and a Completion gate.
 2. Root-agent sub-agent orchestration, context propagation, verification, and progressive reasoning-effort selection.
 
 ## Current State
 
+- The compaction overlay explicitly preserves the user's latest active instruction on whether sub-agents may be used, including associated requirements or limits; later instructions supersede earlier ones.
 - The old model-catalog and full `root_agent_usage_hint_text` replacement method is superseded.
 - `README.md` is the public handoff and installation guide.
 - `install.py` performs backup-first, structured `hooks.json` merge, idempotent upgrade, static verification, uninstall, and exact manifest restore.

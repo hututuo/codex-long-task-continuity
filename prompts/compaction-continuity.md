@@ -5,6 +5,7 @@ When the active compaction prompt requests a summary, follow its requested forma
 Include the following when relevant:
 
 - Current objective: the latest user goal and request, expected deliverable, scope, constraints, approvals, corrections, and decisions.
+- Delegation authorization: explicitly record the user's latest active instruction on whether sub-agents may be used and any associated requirements or limits; later instructions supersede earlier ones.
 - Work state: completed actions; materials, sources, records, data, files, conversations, applications, environments, or interfaces examined; methods and tools used; changes or state transitions made; artifacts created; key evidence; and precise locations or identifiers needed to continue.
 - Reasoning state: the approach taken, questions pursued, decision criteria, working model, hypotheses tested, alternatives ruled in or out, and why the current conclusions follow.
 - Exploration map: the important sources, areas, hypotheses, and routes already explored; why each mattered; the key anchors or facts found; current coverage; remaining gaps; and the relationships or paths to follow next.
